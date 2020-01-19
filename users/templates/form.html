@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+    <form method="POST">
+    {% csrf_token %}
+
+    <input type="text" name="first_name" placeholder="First Name" required="">
+    <input type="text" name="last_name" placeholder="Last Name" required="">
+    <input type="text" name="username" placeholder="Username" required="">
+    <input type="email" name="email" placeholder="Email" required="">
+    <input type="password" name="password1" placeholder="Password" required="">
+    <input type="password" name="password2" placeholder="Confirm Password" required="">
+    <input type="radio" name="cat" value="True">Farmer &nbsp
+    <input type="radio" name="cat" value="False">Consumer
+    <input type="submit" value="Sign Up">
+    <!-- <label for="name">Your name: </label>
+    <input id="name" type="text" name="name" value="{{ current_name }}">
+
+
+
+      <div class="ui slider checkbox">
+       <input id="cat" name="cat" type="checkbox" value="True">
+        <label>seller</label>
+
+        <input id="cat" name="cat" type="checkbox" value="False">
+        <label>buyer</label>
+      </div>
+
+    <input type="submit" value="OK"> -->
+</form>
+  </body>
+</html>

@@ -1,0 +1,120 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+        <title>Registration Form</title>
+        <link rel="stylesheet" href="/css/style_register.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
+
+        <!-- Ignite UI Required Combined CSS Files -->
+        <link href="http://cdn-na.infragistics.com/igniteui/2019.2/latest/css/themes/infragistics/infragistics.theme.css" rel="stylesheet" />
+        <link href="http://cdn-na.infragistics.com/igniteui/2019.2/latest/css/structure/infragistics.css" rel="stylesheet" />
+
+        <script src="http://ajax.aspnetcdn.com/ajax/modernizr/modernizr-2.8.3.js"></script>
+        <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+        <script src="http://code.jquery.com/ui/1.11.1/jquery-ui.min.js"></script>
+
+        <!-- Ignite UI Required Combined JavaScript Files -->
+        <script src="http://cdn-na.infragistics.com/igniteui/2019.2/latest/js/infragistics.core.js"></script>
+        <script src="http://cdn-na.infragistics.com/igniteui/2019.2/latest/js/infragistics.lob.js"></script>
+
+        
+
+    </head>
+    <body>
+
+        <style>        
+            .combo-label {margin-bottom:.5em;}
+        </style>
+        
+        <div class="container mt-3">
+            
+            <div class="jumbotron">
+                <div class="tab-content">
+                    <div id="farmer" class="container tab-pane active"><br>
+                      <div class="signup-form">
+                        <form action="#" method="post">
+                            <h2>Register as Farmer</h2>
+                            
+                            <div class="form-group">
+                                <div class="row">
+                                    <div class="col-xs-6"><input type="text" class="form-control" name="first_name" placeholder="First Name" required="required"></div>
+                                    <div class="col-xs-6"><input type="text" class="form-control" name="last_name" placeholder="Last Name" required="required"></div>
+                                </div>        	
+                            </div>
+                            
+                            <div class="form-group">
+                                <input type="text" class="form-control" name="farmerid" placeholder="Farmer ID" required="required">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" name="address" placeholder="Address" required="required">
+                            </div>
+                            <div class="form-group">
+                                <h5 class="combo-label">Types of crops</h5>
+                                <div id="checkboxSelectCrops" placeholder="Types of crops"></div>
+                            </div>    
+                            <div class="form-group">
+                                <h5 class="combo-label">Warehouse required</h5>
+                                <input type="radio" name="warehouse" value="true"> Yes<br>
+                                <input type="radio" name="warehouse" value="false"> No<br>
+                            </div>
+                            <div class="form-group">
+                                <h5 class="combo-label">Transport facility available</h5>
+                                <input type="radio" name="transport" value="true"> Yes<br>
+                                <input type="radio" name="transport" value="false"> No<br>
+                            </div>   
+                            <div class="form-group">
+                                <h5 class="combo-label">Scale</h5>
+                                <input type="radio" name="scale" value="small"> Small<br>
+                                <input type="radio" name="scale" value="medium"> Medium<br>
+                                <input type="radio" name="scale" value="large"> Large<br>
+                            </div>
+                            <div class="form-group">
+                                <label class="checkbox-inline"><input type="checkbox" required="required"> I accept the <a href="#">Terms of Use</a> &amp; <a href="#">Privacy Policy</a></label>
+                            </div>
+                            <div class="form-group">
+                                <button type="submit" class="btn btn-success btn-lg btn-block" name="register">Register Now</button>
+                            </div>
+                            
+                        </form>
+                        <!-- <div class="text-center">Already have an account? <a href="#">Sign in</a></div> -->
+                    </div>
+                    </div>
+                    
+                  </div>
+                </div> 
+            </div>
+              
+    </div>
+    <script>
+
+        var colors = [
+            { Name: "Food Crops" },
+            { Name: "Cash Crops" },
+            { Name: "Plantation Crops" },
+            { Name: "Horticulture Crops" },
+        ];
+
+        $(function () {
+            $("#checkboxSelectCrops").igCombo({
+                width: 300,
+                dataSource: colors,
+                textKey: "Name",
+                valueKey: "Name",
+                multiSelection: {
+                    enabled: true,
+                    showCheckboxes: true
+                },
+                dropDownOrientation: "bottom"
+            });
+
+        });
+
+    </script>
+    </body>
+</html>

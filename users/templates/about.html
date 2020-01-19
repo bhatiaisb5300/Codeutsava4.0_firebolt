@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html lang="zxx">
+
+<head>
+	<title>About</title>
+	<!-- custom-theme -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="keywords"/>
+	<script type="application/x-javascript">
+		addEventListener("load", function () {
+			setTimeout(hideURLbar, 0);
+		}, false);
+
+		function hideURLbar() {
+			window.scrollTo(0, 1);
+		}
+	</script>
+	<!-- //custom-theme -->
+	<link href='{% static "css/bootstrap.css" %}' rel="stylesheet" type="text/css" media="all" />
+	<link href='{% static "css/style.css" %}' rel="stylesheet" type="text/css" media="all" />
+	<!-- //custom-theme -->
+	<!-- font-awesome-icons -->
+	<link href='{% static "css/font-awesome.css" %}' rel="stylesheet">
+	<!-- //font-awesome-icons -->
+	<link href="//fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i" rel="stylesheet">
+	<link href="//fonts.googleapis.com/css?family=Montserrat:200,200i,300,400,400i,500,500i,600,600i,700,700i,800" rel="stylesheet">
+</head>
+
+<body>
+	<!-- banner -->
+	<div class="banner1" id="home">
+		<div class="center-container inner_agile">
+			<!-- top_header_agile_info_w3ls -->
+			<div class="top_header_agile_info_w3ls">
+				<nav class="navbar navbar-default">
+					<div class="navbar-header navbar-left">
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+									<span class="sr-only">Toggle navigation</span>
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+								</button>
+						<h1><a class="navbar-brand" href='{% url "accounts:index" %}'><span>H</span>ome</a></h1>
+					</div>
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
+						<div class="w3l_header_left">
+							<ul>
+								<li><a class="sign" href="#" data-toggle="modal" data-target="#myModal2"><i class="fa fa-user" aria-hidden="true"></i>    LOGIN</a>										</li>
+
+
+							</ul>
+						</div>
+						<div class="clearfix"> </div>
+
+						<div id="m_nav_container" class="m_nav wthree_bg">
+							<nav class="menu menu--sebastian">
+								<ul id="m_nav_list" class="m_nav menu__list">
+									<li class="m_nav_item active" id="m_nav_item_1"> <a href='{% url "accounts:index" %}' class="link link--kumya"><i class="fa fa-home" aria-hidden="true"></i><span data-letters="Home">Home</span></a></li>
+									<li class="m_nav_item" id="moble_nav_item_3"> <a href='{% url "accounts:about" %}' class="link link--kumya"><i class="fa fa-info-circle" aria-hidden="true"></i><span data-letters="About Us">About Us</span></a></li>
+									<li class="m_nav_item" id="moble_nav_item_4"> <a href="#" class="link link--kumya"><i class="fa fa-picture-o" aria-hidden="true"></i><span data-letters="Waste Management">Waste Management</span></a></li>
+									<li class="m_nav_item" id="moble_nav_item_3"> <a href='{% url "accounts:details" %}' class="link link--kumya"><i class="fa fa-info-circle" aria-hidden="true"></i><span data-letters="All Items">All Items</span></a></li>
+
+									<li class="m_nav_item" id="moble_nav_item_6"> <a href='{% url "accounts:contact" %}' class="link link--kumya"><i class="fa fa-envelope-o" aria-hidden="true"></i><span data-letters="Contact">Contact</span></a></li>
+
+								</ul>
+							</nav>
+						</div>
+					</div>
+				</nav>
+			</div>
+
+			<!--// top_header_agile_info_w3ls -->
+		</div>
+	</div>
+	<!-- //banner -->
+
+	<!-- Modal1 -->
+	<div class="modal fade" id="myModal2" tabindex="-1" role="dialog">
+		<div class="modal-dialog">
+			<!-- Modal content-->
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+
+					<div class="signin-form profile">
+						<h3 class="agileinfo_sign">Sign In</h3>
+						<div class="login-form">
+							<form action="#" method="post">
+								<input type="email" name="email" placeholder="E-mail" required="">
+								<input type="password" name="password" placeholder="Password" required="">
+								<div class="tp">
+									<input type="submit" value="Sign In">
+								</div>
+							</form>
+						</div>
+						<div class="login-social-grids">
+							<ul>
+								<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+								<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+								<li><a href="#"><i class="fa fa-google"></i></a></li>
+							</ul>
+						</div>
+						<p><a href="#" data-toggle="modal" data-target="#myModal3"> Don't have an account?</a></p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- //Modal1 -->
+	<!-- Modal2 -->
+	<div class="modal fade" id="myModal3" tabindex="-1" role="dialog">
+		<div class="modal-dialog">
+			<!-- Modal content-->
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+
+					<div class="signin-form profile">
+						<h3 class="agileinfo_sign">Sign Up</h3>
+						<div class="login-form">
+							<form action="#" method="post">
+								<div class="row">
+									<div class="col-sm-6">
+										<input type="text" name="first" placeholder="First Name" required="">
+									</div>
+									<div class="col-sm-6">
+										<input type="text" name="Last" placeholder="Last Name" required="">
+									</div>
+								</div>
+
+								<input type="text" name="name" placeholder="Username" required="">
+								<input type="email" name="email" placeholder="Email" required="">
+								<input type="password" name="password" placeholder="Password" required="">
+								<input type="password" name="password" placeholder="Confirm Password" required="">
+								<input type="radio" name="register" value="Farmer">Farmer &nbsp
+								<input type="radio" name="register" value="Consumer">Consumer
+								<input type="submit" value="Sign Up">
+							</form>
+						</div>
+						<p><a href="#"> By clicking register, I agree to your terms</a></p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- //Modal2 -->
+	<div class="services-breadcrumb">
+		<div class="container">
+			<ul>
+				<li><a href='{% url "accounts:index" %}'>Home</a><i>|</i></li>
+				<li>About Us</li>
+			</ul>
+		</div>
+	</div>
+	<!-- about -->
+	<div class="about">
+		<div class="container">
+			<h2 class="title-w3-agileits inner">About Us</h2>
+			<p class="quia">Detail description about Farm</p>
+
+			<div class="agile_about_grids">
+				<div class="col-md-6 agile_about_grid_left">
+					<!-- <div class="col-md-6 agile_about_grid_left1">
+						<img src='{% static "images/8.jpg" %}' alt=" " class="img-responsive" />
+					</div>
+					<div class="col-md-6 agile_about_grid_left1">
+						<img src='{% static "images/7.jpg" %}' alt=" " class="img-responsive" />
+					</div> -->
+					<div class="clearfix"> </div>
+					<img class="agile_about_grid_left_img img-responsive" src='{% static "images/banner1.jpg" %}' alt=" " />
+				</div>
+				<div class="col-md-6 agile_about_grid_right">
+					<h4>voluptatibus maiores alias consequatur</h4>
+					<p>Et harum quidem rerum facilis est et expedita <span>distinctio</span>. Nam libero tempore, cum soluta nobis est eligendi
+						optio cumque nihil impedit quo minus id <span>quod</span> maxime placeat facere possimus, omnis voluptas assumenda
+						est, omnis dolor repellendus. Temporibus <span>autem</span> quibusdam et aut officiis debitis.<i>impedit quo minus id <span>quod</span> maxime placeat facere possimus, omnis voluptas
+						assumenda est, omnis dolor repellendus. Temporibus <span>autem</span> quibusdam et aut
+						officiis debitis.</i></p>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+	</div>
+	<!-- //about-counter -->
+
+	<!-- //about-bottom -->
+	<div class="services">
+		<div class="container">
+			<h3 class="title-w3-agileits two">features of Services</h3>
+			<p class="quia">From Farms to Right Place</p>
+
+			<div class="w3l_services_grids">
+				<div class="col-md-3 w3l_services_grid">
+					<div class="w3l_services_grid1">
+						<span class="fa fa-square-o" aria-hidden="true"></span>
+						<h4><a href="#">Better Selling Price</a></h4>
+						<p>Better selling price for Farmers according to the previous analysis pf price and MSP provided by government.</p>
+					</div>
+				</div>
+				<div class="col-md-3 w3l_services_grid">
+					<div class="w3l_services_grid1">
+						<span class="fa fa-thumbs-o-up" aria-hidden="true"></span>
+						<h4><a href="#">Best Sellers</a></h4>
+						<p>Best seller for consumers that let them to buy best quality crops and food products.</p>
+					</div>
+				</div>
+				<div class="col-md-3 w3l_services_grid">
+					<div class="w3l_services_grid1">
+						<span class="fa fa-bolt" aria-hidden="true"></span>
+						<h4><a href="single.html">Farmers & Warehouses</a></h4>
+						<p>Farmers can access nearby Warehouses and cold storage and support smart management technique.</p>
+					</div>
+				</div>
+			</div>
+			<div class="w3l_services_grids">
+				<div class="col-md-3 w3l_services_grid">
+					<div class="w3l_services_grid1">
+						<span class="fa fa-cube" aria-hidden="true"></span>
+						<h4><a href="single.html">Offline Service</a></h4>
+						<p>Farmers can update information regarding their profile, crops, and services they provide.</p>
+					</div>
+				</div>
+				<div class="clearfix"> </div>
+
+				<div class="col-md-3 w3l_services_grid">
+					<div class="w3l_services_grid1">
+						<span class="fa fa-tint" aria-hidden="true"></span>
+						<h4><a href="single.html">Waste Management</a></h4>
+						<p>This feature allows to manage any type of waste from farmers or users. It will provide a social platform to connect with NGOs supporting Waste Management.</p>
+					</div>
+				</div>
+				<div class="col-md-3 w3l_services_grid">
+					<div class="w3l_services_grid1">
+						<span class="fa fa-cube" aria-hidden="true"></span>
+						<h4><a href="single.html">No Additional Cost</a></h4>
+						<p>There is a direct connection between Farmers and Consumers. Absence of middlemen means no additional cost to our food.</p>
+					</div>
+				</div>
+				<!-- <div class="col-md-3 w3l_services_grid">
+					<div class="w3l_services_grid1">
+						<span class="fa fa-flask" aria-hidden="true"></span>
+						<h4><a href="single.html">Quality Food</a></h4>
+						<p>Quality </p>
+					</div>
+				</div>
+				<div class="col-md-3 w3l_services_grid">
+					<div class="w3l_services_grid1">
+						<span class="fa fa-glass" aria-hidden="true"></span>
+						<h4><a href="single.html">Cream</a></h4>
+						<p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit.</p>
+					</div>
+				</div> -->
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+	</div>
+
+	<!-- footer -->
+	<div class="footer">
+		<div class="container">
+			<div class="col-md-3 w3agile_footer_grid">
+				<h3>About Us</h3>
+				<p>Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus.
+				</p>
+
+			</div>
+			<div class="col-md-2 w3agile_footer_grid">
+				<h3>Links</h3>
+				<ul>
+					<li><a href='{% url "accounts:index" %}'>Home</a></li>
+					<li><a href='{% url "accounts:about" %}'>About</a></li>
+					<li><a href="gallery.html">Gallery</a></li>
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+	</div>
+
+			<div class="clearfix"> </div>
+		</div>
+	</div>
+	<!-- //footer -->
+	<!-- js -->
+	<script type="text/javascript" src='{% static "js/jquery-2.1.4.min.js" %}'></script>
+	<!-- //js -->
+	<script src='{% static "js/bars.js" %}'></script>
+
+	<!-- Stats-Number-Scroller-Animation-JavaScript -->
+	<script src='{% static "js/waypoints.min.js" %}'></script>
+	<script src='{% static "js/counterup.min.js" %}'></script>
+	<script>
+		jQuery(document).ready(function ($) {
+			$('.counter').counterUp({
+				delay: 10,
+				time: 1000
+			});
+		});
+	</script>
+	<!-- //Stats-Number-Scroller-Animation-JavaScript -->
+	<!-- //load-more -->
+	<!-- for bootstrap working -->
+	<script src='{% static "js/bootstrap.js" %}'></script>
+	<!-- //for bootstrap working -->
+</body>
+
+</html>

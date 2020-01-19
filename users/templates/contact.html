@@ -1,0 +1,236 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+	<title>Contact Us</title>
+	<!-- custom-theme -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="keywords"/>
+	<script type="application/x-javascript">
+		addEventListener("load", function () {
+			setTimeout(hideURLbar, 0);
+		}, false);
+
+		function hideURLbar() {
+			window.scrollTo(0, 1);
+		}
+	</script>
+	<!-- //custom-theme -->
+	<link href='{% static "css/bootstrap.css" %}' rel="stylesheet" type="text/css" media="all" />
+	<link href='{% static "css/style.css" %}' rel="stylesheet" type="text/css" media="all" />
+	<!-- //custom-theme -->
+	<!-- font-awesome-icons -->
+	<link href='{% static "css/font-awesome.css" %}' rel="stylesheet">
+	<!-- //font-awesome-icons -->
+	<link href="//fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i" rel="stylesheet">
+	<link href="//fonts.googleapis.com/css?family=Montserrat:200,200i,300,400,400i,500,500i,600,600i,700,700i,800" rel="stylesheet">
+</head>
+
+<body>
+	<!-- banner -->
+	<div class="banner1" id="home">
+		<div class="center-container inner_agile">
+			<!-- top_header_agile_info_w3ls -->
+			<div class="top_header_agile_info_w3ls">
+				<nav class="navbar navbar-default">
+					<div class="navbar-header navbar-left">
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+									<span class="sr-only">Toggle navigation</span>
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+								</button>
+						<h1><a class="navbar-brand" href='{% url "accounts:index" %}'><span>H</span>ome</a></h1>
+					</div>
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
+						<div class="w3l_header_left">
+							<ul>
+								<li><a class="sign" href="#" data-toggle="modal" data-target="#myModal2"><i class="fa fa-user" aria-hidden="true"></i>    LOGIN</a>										</li>
+
+
+							</ul>
+						</div>
+						<div class="clearfix"> </div>
+
+						<div id="m_nav_container" class="m_nav wthree_bg">
+							<nav class="menu menu--sebastian">
+								<ul id="m_nav_list" class="m_nav menu__list">
+									<li class="m_nav_item" id="m_nav_item_1"> <a href='{% url "accounts:index" %}' class="link link--kumya"><i class="fa fa-home" aria-hidden="true"></i><span data-letters="Home">Home</span></a></li>
+									<li class="m_nav_item" id="moble_nav_item_3"> <a href='{% url "accounts:about" %}' class="link link--kumya"><i class="fa fa-info-circle" aria-hidden="true"></i><span data-letters="About Us">About Us</span></a></li>
+									<li class="m_nav_item" id="moble_nav_item_4"> <a href="#" class="link link--kumya"><i class="fa fa-picture-o" aria-hidden="true"></i><span data-letters="Gallery">Waste Management</span></a></li>
+									<li class="m_nav_item" id="moble_nav_item_3"> <a href='{% url "accounts:details" %}' class="link link--kumya"><i class="fa fa-info-circle" aria-hidden="true"></i><span data-letters="All Items">All Items</span></a></li>
+
+
+									<li class="m_nav_item active" id="moble_nav_item_6"> <a href='{% url "accounts:contact" %}' class="link link--kumya"><i class="fa fa-envelope-o" aria-hidden="true"></i><span data-letters="Contact">Contact</span></a></li>
+
+								</ul>
+							</nav>
+						</div>
+					</div>
+				</nav>
+			</div>
+
+			<!--// top_header_agile_info_w3ls -->
+		</div>
+	</div>
+	<!-- //banner -->
+
+	<!-- Modal1 -->
+	<div class="modal fade" id="myModal2" tabindex="-1" role="dialog">
+		<div class="modal-dialog">
+			<!-- Modal content-->
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+
+					<div class="signin-form profile">
+						<h3 class="agileinfo_sign">Sign In</h3>
+						<div class="login-form">
+							<form  method="POST">
+								<input type="email" name="email" placeholder="E-mail" required="">
+								<input type="password" name="password" placeholder="Password" required="">
+								<div class="tp">
+									<input type="submit" value="Sign In">
+								</div>
+							</form>
+						</div>
+						<div class="login-social-grids">
+							<ul>
+								<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+								<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+								<li><a href="#"><i class="fa fa-rss"></i></a></li>
+							</ul>
+						</div>
+						<p><a href="#" data-toggle="modal" data-target="#myModal3"> Don't have an account?</a></p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- //Modal1 -->
+	<!-- Modal2 -->
+	<div class="modal fade" id="myModal3" tabindex="-1" role="dialog">
+		<div class="modal-dialog">
+			<!-- Modal content-->
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+
+					<div class="signin-form profile">
+						<h3 class="agileinfo_sign">Sign Up</h3>
+						<div class="login-form">
+							<form action="#" method="post">
+								<div class="row">
+									<div class="col-sm-6">
+										<input type="text" name="first" placeholder="First Name" required="">
+									</div>
+									<div class="col-sm-6">
+										<input type="text" name="Last" placeholder="Last Name" required="">
+									</div>
+								</div>
+
+								<input type="text" name="name" placeholder="Username" required="">
+								<input type="email" name="email" placeholder="Email" required="">
+								<input type="password" name="password" placeholder="Password" required="">
+								<input type="password" name="password" placeholder="Confirm Password" required="">
+								<input type="radio" name="register" value="Farmer">Farmer &nbsp
+								<input type="radio" name="register" value="Consumer">Consumer
+								<input type="submit" value="Sign Up">
+							</form>
+						</div>
+						<p><a href="#"> By clicking register, I agree to your terms</a></p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- //Modal2 -->
+	<!-- //Modal2 -->
+	<div class="services-breadcrumb">
+		<div class="container">
+			<ul>
+				<li><a href='{% url "accounts:index" %}'>Home</a><i>|</i></li>
+				<li>Contact </li>
+			</ul>
+		</div>
+	</div>
+	<!-- contact -->
+	<div class="banner-bottom">
+		<div class="container">
+			<h2 class="title-w3-agileits inner">Contact</h2>
+			<p class="quia">Add Some Description </p>
+
+			<div class="w3ls_map">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3718.5490831480774!2d81.60284041493637!3d21.24972218587909!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a28dde213f66723%3A0x21543965c50c43c7!2sNational%20Institute%20of%20Technology%2C%20Raipur!5e0!3m2!1sen!2sin!4v1579350937254!5m2!1sen!2sin"  style="border:0;" allowfullscreen=""></iframe>
+			</div>
+			<div class="col-md-4 wthree_contact_left">
+				<h4>Address</h4>
+				<p>Est eligendi optio cumque nihil impedit quo minus id quod maxime
+					<span>26 56D United States</span></p>
+				<ul>
+					<li><span class="fa fa-phone" aria-hidden="true"></span> Free Phone :+(010) 012 345 211</li>
+					<li><span class="fa fa-folder-open-o" aria-hidden="true"></span> Fax :+1 078 4589 2456</li>
+					<li><span class="fa fa-envelope-o" aria-hidden="true"></span><a href="mailto:info@example.com">info@example.com</a></li>
+				</ul>
+			</div>
+			<div class="col-md-8 wthree_contact_left">
+				<h4>Contact Form</h4>
+				<form  method="POST">
+					{% csrf_token %}
+					<div class="col-md-6 wthree_contact_left_grid">
+						<input type="text" name="name" placeholder="Name " required="">
+
+						<input type="email" name="email" placeholder="Email " required="">
+					</div>
+					<div class="col-md-6 wthree_contact_left_grid">
+						<input type="text" name="telephone" placeholder="Telephone" required="">
+						<input type="text" name="subject" placeholder="Subject" required="">
+					</div>
+					<div class="clearfix"> </div>
+					<textarea name="message" placeholder="Message... " required=""></textarea>
+					<input type="submit" value="Submit">
+					<input type="reset" value="Clear">
+				</form>
+			</div>
+			<div class="clearfix"> </div>
+
+		</div>
+	</div>
+	<!-- //contact -->
+
+	<!-- footer -->
+	<div class="footer">
+		<div class="container">
+			<div class="col-md-3 w3agile_footer_grid">
+				<h3>About Us</h3>
+				<p>Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus.
+				</p>
+
+			</div>
+			<div class="col-md-2 w3agile_footer_grid">
+				<h3>Links</h3>
+				<ul>
+					<li><a href='{% url "accounts:index" %}'>Home</a></li>
+					<li><a href='{% url "accounts:about" %}'>About</a></li>
+					<li><a href="gallery.html">Gallery</a></li>
+					<li><a href='{% url "accounts:contact" %}'>Contact</a></li>
+				</ul>
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+	</div>
+
+	<!-- //footer -->
+	<!-- js -->
+	<script type="text/javascript" src='{% static "js/jquery-2.1.4.min.js" %}'></script>
+	<!-- //js -->
+	<!-- //load-more -->
+	<!-- for bootstrap working -->
+	<script src='{% static "js/bootstrap.js" %}'></script>
+	<!-- //for bootstrap working -->
+</body>
+
+</html>
